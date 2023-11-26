@@ -21,6 +21,7 @@ create table if not exists "user"
     email             varchar                  not null
         constraint user_email_unique unique,
     ref               varchar
+
         constraint user_ref_unique unique,
     sex               sex                      not null,
     birth_date        date                     ,
